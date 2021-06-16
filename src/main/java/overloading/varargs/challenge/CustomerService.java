@@ -13,11 +13,15 @@ public class CustomerService {
         dao.insert(customer);
     }
 
-    void processCustomerProduct(String customerId, String productId, Object o){
+    void processCustomerProduct(String customerId){
+        processCustomerProduct(customerId, null);
+    }
+
+    void processCustomerProduct(String customerId, String productId) {
         processCustomerProduct(customerId, productId, null);
     }
 
-    void processCustmerProduct(String customerId, String productId, String dicsountId){
-        System.out.println("Processing: " + customerId + productId + dicsountId);
+    void processCustomerProduct(String customerId, String productId, String discountId) {
+        System.out.println("Processing:" + customerId + productId + discountId);
     }
 }
