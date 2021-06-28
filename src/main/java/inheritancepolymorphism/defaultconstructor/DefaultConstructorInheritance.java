@@ -3,6 +3,7 @@ package inheritancepolymorphism.defaultconstructor;
 public class DefaultConstructorInheritance {
 
     static class Villain{
+
         Villain(){
             System.out.println("A villain was created!");
         }
