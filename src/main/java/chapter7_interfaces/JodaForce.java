@@ -3,7 +3,7 @@ package chapter7_interfaces;
 public class JodaForce {
 
     public static void main(String[] args) {
-        System.out.println(new Yoda().userSaber());
+        System.out.println(new Yoda().useSaber());
         System.out.println(new Yoda().attack());
         System.out.println(new Yoda().lightForce);
 
@@ -12,7 +12,7 @@ public class JodaForce {
     static abstract class LightForce{
         int lightForce;
 
-        abstract Object userSaber();
+        abstract Object useSaber();
         abstract long attack();
 
         LightForce(){
@@ -23,7 +23,7 @@ public class JodaForce {
     static class Yoda extends LightForce{
 
         @Override
-        String userSaber() {
+        String useSaber() {
             return "useSaber";
         }
 
