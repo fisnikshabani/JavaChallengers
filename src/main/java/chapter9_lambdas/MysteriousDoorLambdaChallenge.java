@@ -11,8 +11,9 @@ public class MysteriousDoorLambdaChallenge {
         doorNumber++;
 
         List<String> doors = Arrays.asList("A","B","C");
+        int finalDoorNumber = doorNumber;
         doors.forEach(door -> {
-            System.out.println(door + doorNumber); // Lambdas can only access variables that are final or effectively final so this wont compile!
+            System.out.println(door + finalDoorNumber); // Lambdas can only access variables that are final or effectively final so this wont compile!
         });
     }
 }
