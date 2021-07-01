@@ -5,7 +5,6 @@ public class LambdaVSMethodReferenceChallenge {
     public static void main(String[] args) {
 
         Runnable universeImpactRunnable = () -> new ChuckNorris().roundHouseKick();
-
         Runnable galaxyImpactRunnable = new ChuckNorris()::roundHouseKick;
 
         System.out.print("The galaxy is finished = ");
